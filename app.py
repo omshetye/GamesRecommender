@@ -4,7 +4,6 @@ import pickle
 import requests
 from io import BytesIO
 from PIL import Image
-<<<<<<< HEAD
 
 # Load data and models
 api_key = "93a4c88f89e54c249635f2e12a2cbd8f"
@@ -78,7 +77,7 @@ if st.button("Recommend"):
                 img = img.resize((400, 200))
                 st.image(img)
                 st.markdown("<hr>", unsafe_allow_html=True)
-=======
+
 
 # Load data and models
 api_key = "93a4c88f89e54c249635f2e12a2cbd8f"
