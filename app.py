@@ -11,14 +11,9 @@ games_dict = pickle.load(open('games.pkl', 'rb'))
 games = pd.DataFrame(games_dict)
 sim_mat = pickle.load(open('sim.pkl', 'rb'))
 
-st.sidebar.title("Welcome to GamerAI")
+st.sidebar.title("FREE Palestine")
 st.sidebar.text(
-    "Explore a world of personalized gaming with our gaming recommendation system! "
-    "Tailored to your preferences, it suggests diverse titles from the latest releases to hidden gems. "
-    "Our user-friendly interface lets you seamlessly navigate recommendations, watch trailers, "
-    "and access detailed game information. Stay ahead with real-time updates and connect with the gaming community "
-    "through integrated feedback. Unlock achievements and milestones as you discover your next gaming obsession—all "
-    "conveniently from our website's. Level up your gaming experience today!"
+    "*from the map"
 )
 
 def recommend(game):
@@ -52,7 +47,7 @@ def get_poster(game):
         st.error(f"Error fetching data: {response.status_code}")
         return None
 
-st.title("Om's Video Gamer Recommender System")
+st.title("Om's Video Games Recommender System")
 game_selected = st.selectbox("Pick one", games['Title'].values)
 
 if st.button("Recommend"):
